@@ -3,7 +3,7 @@
 Netlify-ready pure front-end workout tracker PWA.
 
 ## Version
-2.6
+2.7
 
 ## Bulk Exercise Images
 The app automatically checks `assets/exercises/<exercise-slug>.webp` for every exercise. Existing hyphens are preserved as single hyphens. You can still use `exercise-images.js` for custom overrides.
@@ -53,3 +53,11 @@ All data is stored locally in the browser. Use Settings > Export Data regularly 
 - Updated the Home Today card to use the workout logged on the same weekday last week for display-only target and exercise count logic.
 - Updated the Home Today card to show Rest Day with 0 Exercises when last week's matching weekday has no logged workout.
 - Removed the Today card calendar icon column and redundant Last 30 Days trained/rest summary text.
+
+###### v2.7 Home, Rest Day and Settings Refinement Update
+- Added a Rest Day image asset and displays it on the Home Today card using the same blue gradient card style as target-area days.
+- Replaced the edit icon with a thinner modern SVG edit icon.
+- Removed the Custom Target Areas explanatory footer and removed the Includes label from custom target summaries.
+- Simplified the Home greeting spacing and typography, and removed the motivational subtitle.
+- Updated Personal Best to follow the Home Today card target logic, showing Rest Day when the Today card displays Rest Day.
+- Removed the Home Quick Actions card.
