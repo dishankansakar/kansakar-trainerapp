@@ -3,7 +3,7 @@
 Netlify-ready pure front-end workout tracker PWA.
 
 ## Version
-2.8
+2.9
 
 ## Bulk Exercise Images
 The app automatically checks `assets/exercises/<exercise-slug>.webp` for every exercise. Existing hyphens are preserved as single hyphens. You can still use `exercise-images.js` for custom overrides.
@@ -40,10 +40,8 @@ All data is stored locally in the browser. Use Settings > Export Data regularly 
 - assets/targets/ remains empty for user-supplied target images.
 
 
-###### v2.8 Hero Logic, Home Title, Exercise Database and Custom Target Update
-- Updated the Hero Card to use the current Today tab plan when Today has any exercises, including complete or incomplete exercises.
-- Kept same-weekday-last-week fallback only when Today has no exercises listed.
-- Updated Hero Card exercise count to use all Today Exercise Cards when using the Today plan source.
-- Matched Last 30 Days, Personal Best and Training Balance card titles to the Weight Trend gradient title style.
-- Made Exercise Database rows more compact and aligned exercise-name font sizing with the Exercise Database heading.
-- Updated Custom Target Areas so delete is only available inside edit mode, with the edit icon in the normal row action position.
+###### v2.9 Energy Meter and Training Balance Update
+- Moved Training Balance subtitle to the right side and removed brackets.
+- Replaced the Personal Best card with an Energy Meter card using continuous logged training-day streak logic.
+- Added Energy Meter image assets under assets/energy/ and mapped levels 1 to 5 to the requested messages.
+- Preserved the Home card sizing, gradient title styling and white card background used by the previous Personal Best card.
