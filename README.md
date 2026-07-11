@@ -3,7 +3,7 @@
 Netlify-ready pure front-end workout tracker PWA.
 
 ## Version
-2.9
+3.1
 
 ## Bulk Exercise Images
 The app automatically checks `assets/exercises/<exercise-slug>.webp` for every exercise. Existing hyphens are preserved as single hyphens. You can still use `exercise-images.js` for custom overrides.
@@ -40,8 +40,7 @@ All data is stored locally in the browser. Use Settings > Export Data regularly 
 - assets/targets/ remains empty for user-supplied target images.
 
 
-###### v2.9 Energy Meter and Training Balance Update
-- Moved Training Balance subtitle to the right side and removed brackets.
-- Replaced the Personal Best card with an Energy Meter card using continuous logged training-day streak logic.
-- Added Energy Meter image assets under assets/energy/ and mapped levels 1 to 5 to the requested messages.
-- Preserved the Home card sizing, gradient title styling and white card background used by the previous Personal Best card.
+###### v3.1 Equipment Field Update
+- Added optional Equipment dropdown to Exercise Database with Dumbbell, Barbell, Smith Machine, Cable Machine and Weight Machine options.
+- Equipment can be left blank and only one equipment option can be selected per exercise.
+- Displayed selected equipment on Today and Log exercise cards using the Exercise Database lookup.
