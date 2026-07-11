@@ -3,7 +3,7 @@
 Netlify-ready pure front-end workout tracker PWA.
 
 ## Version
-2.7
+2.8
 
 ## Bulk Exercise Images
 The app automatically checks `assets/exercises/<exercise-slug>.webp` for every exercise. Existing hyphens are preserved as single hyphens. You can still use `exercise-images.js` for custom overrides.
@@ -40,24 +40,10 @@ All data is stored locally in the browser. Use Settings > Export Data regularly 
 - assets/targets/ remains empty for user-supplied target images.
 
 
-###### v2.5 Interaction, Icon and Image Handling Update
-- Added tap-and-hold reordering for Today workout exercise cards, with order saved immediately.
-- Replaced destructive remove/delete X buttons with minimalist SVG bin icons, while keeping delete-set and close/cancel X controls unchanged.
-- Improved exercise image selection by resizing/compressing uploaded images before saving, with friendly errors for unsupported or oversized images.
-- Shortened Exercise Database image editor buttons to Add, Replace, and Remove with smaller mobile-friendly styling.
-- Included target-area image assets under assets/targets/ for the Home dashboard hero image.
-
-###### v2.6 Reorder, Edit Icon and Home Plan Logic Update
-- Fixed Today tab tap-and-hold reordering so active dragging locks manual page scrolling and supports controlled edge auto-scroll.
-- Replaced app-wide Edit text buttons with a transparent minimal SVG edit icon, while keeping Done as text.
-- Updated the Home Today card to use the workout logged on the same weekday last week for display-only target and exercise count logic.
-- Updated the Home Today card to show Rest Day with 0 Exercises when last week's matching weekday has no logged workout.
-- Removed the Today card calendar icon column and redundant Last 30 Days trained/rest summary text.
-
-###### v2.7 Home, Rest Day and Settings Refinement Update
-- Added a Rest Day image asset and displays it on the Home Today card using the same blue gradient card style as target-area days.
-- Replaced the edit icon with a thinner modern SVG edit icon.
-- Removed the Custom Target Areas explanatory footer and removed the Includes label from custom target summaries.
-- Simplified the Home greeting spacing and typography, and removed the motivational subtitle.
-- Updated Personal Best to follow the Home Today card target logic, showing Rest Day when the Today card displays Rest Day.
-- Removed the Home Quick Actions card.
+###### v2.8 Hero Logic, Home Title, Exercise Database and Custom Target Update
+- Updated the Hero Card to use the current Today tab plan when Today has any exercises, including complete or incomplete exercises.
+- Kept same-weekday-last-week fallback only when Today has no exercises listed.
+- Updated Hero Card exercise count to use all Today Exercise Cards when using the Today plan source.
+- Matched Last 30 Days, Personal Best and Training Balance card titles to the Weight Trend gradient title style.
+- Made Exercise Database rows more compact and aligned exercise-name font sizing with the Exercise Database heading.
+- Updated Custom Target Areas so delete is only available inside edit mode, with the edit icon in the normal row action position.
