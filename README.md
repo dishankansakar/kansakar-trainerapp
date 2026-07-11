@@ -3,7 +3,7 @@
 Netlify-ready pure front-end workout tracker PWA.
 
 ## Version
-2.2
+2.5
 
 ## Bulk Exercise Images
 The app automatically checks `assets/exercises/<exercise-slug>.webp` for every exercise. Existing hyphens are preserved as single hyphens. You can still use `exercise-images.js` for custom overrides.
@@ -38,3 +38,11 @@ All data is stored locally in the browser. Use Settings > Export Data regularly 
 - Home Last 30 Days and Personal Best cards now use a plain white background to match the Training Balance card.
 - Today tab target area selector now includes a small chevron dropdown icon to indicate it is clickable.
 - assets/targets/ remains empty for user-supplied target images.
+
+
+###### v2.5 Interaction, Icon and Image Handling Update
+- Added tap-and-hold reordering for Today workout exercise cards, with order saved immediately.
+- Replaced destructive remove/delete X buttons with minimalist SVG bin icons, while keeping delete-set and close/cancel X controls unchanged.
+- Improved exercise image selection by resizing/compressing uploaded images before saving, with friendly errors for unsupported or oversized images.
+- Shortened Exercise Database image editor buttons to Add, Replace, and Remove with smaller mobile-friendly styling.
+- Included target-area image assets under assets/targets/ for the Home dashboard hero image.
