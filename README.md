@@ -3,7 +3,7 @@
 Netlify-ready pure front-end workout tracker PWA.
 
 ## Version
-3.1
+3.2
 
 ## Bulk Exercise Images
 The app automatically checks `assets/exercises/<exercise-slug>.webp` for every exercise. Existing hyphens are preserved as single hyphens. You can still use `exercise-images.js` for custom overrides.
@@ -44,3 +44,10 @@ All data is stored locally in the browser. Use Settings > Export Data regularly 
 - Added optional Equipment dropdown to Exercise Database with Dumbbell, Barbell, Smith Machine, Cable Machine and Weight Machine options.
 - Equipment can be left blank and only one equipment option can be selected per exercise.
 - Displayed selected equipment on Today and Log exercise cards using the Exercise Database lookup.
+
+
+####### v3.2 Rename Sync, Daily Weight and Collapsible Today Cards
+- Exercise Database renames now update linked Today and historical Log records through exerciseId.
+- Log view mode now resolves Equipment from the Exercise Database.
+- Added optional daily body weight display/editing in Log, synchronized with Settings Weight History and Home Weight Trend.
+- Added session-persistent collapsible Today Exercise Cards with a minimal chevron header control.
