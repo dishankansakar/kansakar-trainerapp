@@ -2,6 +2,7 @@
   "name": "Gym Trainer",
   "short_name": "Gym Trainer",
   "start_url": ".",
+  "scope": ".",
   "display": "standalone",
   "background_color": "#f8fafc",
   "theme_color": "#06b6d4",

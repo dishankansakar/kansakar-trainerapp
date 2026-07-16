@@ -51,3 +51,11 @@ All data is stored locally in the browser. Use Settings > Export Data regularly 
 - Log view mode now resolves Equipment from the Exercise Database.
 - Added optional daily body weight display/editing in Log, synchronized with Settings Weight History and Home Weight Trend.
 - Added session-persistent collapsible Today Exercise Cards with a minimal chevron header control.
+
+
+####### v3.4 Advanced Mode and Version Placement
+- Moved the app version from the header to a standalone themed text label at the bottom of Settings.
+- Added a persistent Advanced Mode toggle to the Today header; the setting defaults to OFF.
+- When Advanced Mode is ON, newly added exercises copy the exact previous completed sets and weights by unique exerciseId.
+- Cardio exercises copy the previous duration and distance; exercises without history retain normal empty/default values.
+- Copy last behavior remains unchanged.
